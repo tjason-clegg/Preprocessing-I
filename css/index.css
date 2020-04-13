@@ -126,6 +126,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Baloo Paaji 2';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Baloo Paaji 2 Regular'), local('BalooPaaji2-Regular'), url(https://fonts.gstatic.com/s/baloopaaji2/v1/i7dMIFFzbz-QHZUdV9_UGWZuYFI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZKCM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Paaji 2';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Baloo Paaji 2 Regular'), local('BalooPaaji2-Regular'), url(https://fonts.gstatic.com/s/baloopaaji2/v1/i7dMIFFzbz-QHZUdV9_UGWZuYFI.ttf) format('truetype');
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -134,7 +155,71 @@ html,
 body {
   height: 100%;
 }
+.pgBrdr {
+  border: 0.5rem solid darkblue;
+  border-width: 100%;
+}
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: darkblue;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
+  background-color: darkblue;
+  padding: 1rem;
+  color: lightblue;
+  font-family: 'Oswald', sans-serif;
+}
+header h1,
+header h2 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+nav {
+  background-color: lightblue;
+}
+nav a {
+  overflow: hidden;
+  color: darkblue;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+nav a:hover {
+  color: lightblue;
+  background-color: darkblue;
+}
+div.mainContent {
+  padding: 2rem;
+  color: darkblue;
+  font-family: 'Baloo Paaji 2', cursive;
+}
+div.mainContent h2 {
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 2rem;
+  border: 0.5rem solid darkblue;
+  border-width: 100%;
+}
+h3 {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+h3 p {
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: darkblue;
+  padding: 3rem;
+  color: darkblue;
+  font-size: 1.4rem;
+  font-family: 'Oswald', sans-serif;
+  color: lightblue;
 }
