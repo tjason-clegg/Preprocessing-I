@@ -47,8 +47,21 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Roboto+Condensed:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
 /* Set every element's box-sizing to border-box */
+@accentColor: darkblue;
+@head-foot-color: lightblue;
+@mainFont:'Baloo Paaji 2', cursive;
+@secondaryFont:'Oswald', sans-serif;
+
+.bordered(){
+	border:.5rem solid darkblue;
+	border-width:100%;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -56,4 +69,78 @@ table {
 html, body {
     height: 100%;
 }
+.pgBrdr{
+	.bordered();
+}
+body{
+	background-color: white;
+	color:@accentColor;
+}
 
+
+header{
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+	align-content:center;
+	background-color:darkblue;
+	padding:1rem;
+	color:@head-foot-color;
+	font-family:@secondaryFont;
+	h1, h2{
+		font-size:3rem;
+		padding:1rem;
+	}//This closes the h1,h2 tags
+  }//This closes the header group
+
+  nav{
+	background-color:@head-foot-color;
+	
+	a{
+		overflow:hidden;
+		color:darkblue;
+		padding:.5rem;
+		text-decoration:none;
+		font-size:1.5rem;
+		&:hover {
+			color:@head-foot-color;
+			background-color:darkblue;
+		}//This closes hover
+	}//This closes the anchor
+}//This closes the nav
+
+div.mainContent{
+	padding:2rem;
+	color:@accentColor;
+	font-family:@mainFont;
+	h2{
+		font-size:2rem;
+		padding:.5rem;
+		margin:2rem;
+		.bordered();
+		
+	}//This closes h2
+}//This closes div.mainContent
+
+h3{
+	font-size:1.3rem;
+	padding:1rem;
+
+	p{
+		padding:1rem;
+		font-size:1.1rem;
+		
+	}//This closes p
+}//This closes h3
+
+footer{
+	display:flex;
+	justify-content:space-evenly;
+	text-align:center;
+	background-color:darkblue;
+	padding:3rem;
+	color:@accentColor;
+	font-size:1.4rem;
+	font-family:@secondaryFont;
+	color:@head-foot-color;
+}//This closes footer
